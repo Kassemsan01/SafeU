@@ -3,6 +3,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -57,12 +58,13 @@ body::before{
 .form-control1 label{
     position: absolute;
     left: 30px;
-    top: 28%;
-    transform: translateY(-28%);
+    top: 25%;
+    transform: translateY(-29%);
     font-size: 1rem;
     pointer-events: none;
     color: black;
     transition: all 0.1s ease;
+    align-items: center;
 }
 
 .form-control1 input :is(:focus, :valid) ~ label{
@@ -103,7 +105,7 @@ body::before{
 .form-control2 label{
     position: absolute;
     left: 30px;
-    top: 36.5%;
+    top: 33%;
     transform: translateY(-37%);
     font-size: 1rem;
     pointer-events: none;
@@ -170,5 +172,66 @@ form .ajuda :where(label, a){
 .corpo small{
     display: block;
     margin-top: 15px;
-    color: #black;
+    color: black;
+}
+
+input[type="checkbox"]{
+    --webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+    left: 100px;
+    top: 50%;
+
+}
+
+.check{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 30px;
+    background-color: #181818;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: ease-in 0.5s;
+
+}
+
+input[type="checkbox"]:checked ~.check{
+    background-color: #add;
+    box-shadow: 0 0 0 1200px black;
+}
+
+.check::before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: #add;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: 0.5;
+
+}
+
+input[type="checkbox"]:checked ~ .check::before{
+    transform: translateX(-50px);
+}
+
+.check::after{
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: #181818;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: 0.5;
+    transform:translateX(50px);
+}
+
+input[type="checkbox"]:checked ~.check::after{
+    transform: translateX(0px);
 }
