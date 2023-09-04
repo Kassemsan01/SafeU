@@ -1,180 +1,126 @@
 *{
-    font-family:monospace;
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
-    background-color: white;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-body::before{
-    content: "";
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card{
+    background-color: #33333325;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000060;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #272262;
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #272262;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+    border-radius: 0;
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid #4038a0;
+}
+
+.label-float label{
+    color: #272262;
+    pointer-events: none;
     position: absolute;
-    left: 0;
     top: 0;
-    opacity:0.5;
-    width: 100%;
-    height: 100%;
+    left: 0;
+    margin-top: 13px;
+    transition: all 0.3s ease-out;
 }
 
+.label-float input:focus + label, 
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #4038a0;
+}
 
-.corpo{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.justify-center{
+    background-color: transparent;
+    border-color: #272262;
+    color: #272262;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
     border-radius: 4px;
-    padding: 70px;
-    width: 450px;
-    background: rgba(0,0 green,0 blue,0.75 alpha);
-    
-}
-
-.corpo h2{
-    color: black;
-    font-size: 2rem;
-}
-
-.corpo form{
-    margin: 25px 0 65px;
-}
-
-.form-control1 input{
-    height: 100%;
-    width: 100%;
-    background: #686767;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 0 20px;
-}
-
-
-.form-control1 label{
-    position: absolute;
-    left: 30px;
-    top: 25%;
-    transform: translateY(-29%);
-    font-size: 1rem;
-    pointer-events: none;
-    color: black;
-    transition: all 0.1s ease;
-    align-items: center;
-    text-align: center;
-}
-
-.form-control1 input :is(:focus, :valid) ~ label{
-    font-size: 0.8rem;
-    transform: translateY(-130%);
-}
-
-.corpo a{
-    text-decoration: none;
-}
-
-.corpo a :hover{
-    text-decoration: underline;
-}
-
-.corpo :where(label,p,a){
-    color: #333;
-}
-
-.corpo p a {
-    color:blue;
-}
-
-
-.form-control2 input{
-    height: 100%;
-    width: 100%;
-    background: #686767;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 0 20px;
-    text-align: center;
-}
-
-
-.form-control2 label{
-    position: absolute;
-    left: 30px;
-    top: 33%;
-    transform: translateY(-37%);
-    font-size: 1rem;
-    pointer-events: none;
-    color: black;
-    transition: all 0.1s ease;
-    text-align: center;
-}
-
-.form-control2 input :is(:focus, :valid) ~ label{
-    font-size: 0.8rem;
-    transform: translateY(-130%);
-}
-
-form button{
-    width: 100%;
-    padding: 16px 0;
-    font-size: 1rem;
-    background: black;
-    color: #fff;
-    font-weight: 500;
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    margin: 25px 0 10px;
     cursor: pointer;
-    transition: 0.1s ease;
+    outline: none;
+    transition: all 0.3s ease-out;
 }
 
-form button:hover{
-    background: red;
+.justify-center:hover{
+    background-color: #272262;
+    color: #fff;
 }
 
-
-
-@media (max-width: 740px){
-    body::before{
-        display: none;
-}
-
-.corpo{
-    width: 100%;
-    top: 43%;
-    
-}
-
-.corpo form{
-    margin: 25px 0 40px;
-}
-
-}
-
-form .remember-me{
+.justify-center{
+    justify-content: center;
     display: flex;
 }
 
-form .remember-me{
-    margin-right: 5px;
-    accent-color: blue;
+hr{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
 }
 
-form .ajuda :where(label, a){
-    font-size: 0.9rem;
+p{
+    color: #272262;
+    font-size: 14pt;
+    text-align: center;
 }
 
-.corpo small{
-    display: block;
-    margin-top: 15px;
-    color: black;
-
+a{
+    color: #7a3077;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
 }
+
+a:hover{
+    color: #272262;
+}
+
+
+
+
+
