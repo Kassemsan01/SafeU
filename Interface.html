@@ -15,6 +15,8 @@
     <div class="card">
         <h1>Entrar</h1>
 
+        <div id="msgError"></div>
+
         <div class="label-float">
             <input type="text" id="usuario" placeholder="" required>
             <label id="userLabel" for="usuario">usuario</label>
@@ -22,12 +24,12 @@
 
         <div class="label-float">
             <input type="password" id="senha" placeholder="" required>
-            <label id="senha" for="senha">senha</label>
+            <label id="senhaLabel" for="senha">senha</label>
             <i class="fa fa-eye" aria-hidden="true"></i>
         </div>
 
         <div class="justify-center">
-            <a href="Tela_Inicial.html"><button type="button">Entrar</button></a>
+            <button onclick="entrar()">Entrar</button>
         </div>
 
         <div class="justify-center">
