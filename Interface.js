@@ -41,10 +41,21 @@ function entrar(){
     })
 
     if(usuario.value == userValid.user && senha.value == userValid.senha){
+        window.location.href = "http://127.0.0.1:5500/Tela_inicial.html"
 
+        let token = Math.random().toString(16).substring(2)
+        localStorage.setItem("token", token)
+
+        localStorage.setItem("userLogado", JSON.stringify(userValid))
 
     } else{
-        userLabel.setAt
+        userLabel.setAttribute("style", "color: red")
+        usuario.setAttribute("style", "border-color: red")
+        senhaLabel.setAttribute("style", "color: red")
+        senha.setAttribute("style", "border-color: red")
+        msgError.setAttribute("style", "display: block")
+        msgError.innerHTML = "Usuario ou Senha incorretos"
+        usuario.focus()
 
     }
 }
