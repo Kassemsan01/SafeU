@@ -122,8 +122,9 @@ a:hover{
 
 img{
   position: fixed;
-  padding: 25px 60px;
+  padding: 7px;
   z-index: 1;
+  border-radius: 4px;
 }
 
 .fa-eye{
