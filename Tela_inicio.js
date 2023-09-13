@@ -13,3 +13,7 @@ function sair(){
     localStorage.removeItem("userLogado")
     window.location.href = "http://127.0.0.1:5500/Interface.html"
 }
+
+function entrar(){
+    
+}
