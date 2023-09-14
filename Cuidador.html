@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>SafeU</title>
+    <link rel="stylesheet" href="stilo_Cuidador.css" />
+    <img href="#"><img src="LogoSafeU.png"
+        alt="logo do site" height="300" width="300"></img>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <script src="Cuidador.js" defer></script>
+        
+</head>
+
+<body>
+<div class="container">
+    <div class="card">
+        <h1>Cadastrar Cuidador</h1>
+
+        <div id="msgError"></div>
+        <div id="msgSuccess"></div>
+
+        <div class="label-float">
+            <input type="text" id="nome" placeholder="" required>
+            <label id="LabelNome" for="nome">Nome</label>
+        </div>
+
+        <div class="label-float">
+            <input type="text" id="coren" placeholder="" required>
+            <label id="LabelCoren" for="coren">Coren</label>
+        </div>
+
+        <div class="label-float">
+            <input type="text" id="telefone" placeholder="" required>
+            <label id="LabelTelefone" for="telefone">Telefone</label>
+        </div>
+
+        <div class="justify-center">
+            <button onclick="cadastrar()">Cadastrar</button>
+        </div>
+
+
+    </div>
+</div>
+</body>
+
+</html>
