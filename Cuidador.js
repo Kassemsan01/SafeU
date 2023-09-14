@@ -61,9 +61,9 @@ telefone.addEventListener("keyup", ()=>{
 function cadastrar(){
     if(validNome && validTelefone && validCoren){
 
-        let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]")
+        let listaCuid = JSON.parse(localStorage.getItem("listaCuid") || "[]")
 
-        listaUser.push(
+        listaCuid.push(
             {
                 nomeCad: nome.value,
                 corCad: coren.value,
@@ -71,7 +71,7 @@ function cadastrar(){
             }
         )
 
-        localStorage.setItem("listaUser", JSON.stringify(listaUser))
+        localStorage.setItem("listaCuid", JSON.stringify(listaCuid))
 
         msgSuccess.setAttribute("Style", "display: block")
         msgSuccess.innerHTML = "<strong>Cadastrando Cuidador...</strong>"
@@ -89,4 +89,20 @@ function cadastrar(){
         msgSuccess.innerHTML = ""
         msgSuccess.setAttribute("Style", "display: none")
     }
+}
+
+let userLogado = JSON.parse(localStorage.getItem("userLogado"))
+let logado = document.querySelector("#logado")
+
+logado.innerHTML = "Olá " + userLogado.nome
+
+if(localStorage.getItem("token") == null){
+    alert("Você precisa estar logado para acessar essa página")
+    window.location.href = "http://127.0.0.1:5500/Interface.html"
+}
+
+function sair(){
+    localStorage.removeItem("token")
+    localStorage.removeItem("userLogado")
+    window.location.href = "http://127.0.0.1:5500/Interface.html"
 }
