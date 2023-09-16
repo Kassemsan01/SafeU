@@ -37,7 +37,7 @@ nome.addEventListener("keyup", ()=>{
 usuario.addEventListener("keyup", ()=>{
     if(usuario.value.length <=4){
         LabelUsuario.setAttribute("style", "color: red")
-        LabelUsuario.innerHTML = '<strong> Usuario *Insira no minimo 4 caracteres</strong>'
+        LabelUsuario.innerHTML = '<strong> Usuario *Insira no minimo 5 caracteres</strong>'
         usuario.setAttribute("style", "border-color: red")
         validUsuario = false
     } else{
