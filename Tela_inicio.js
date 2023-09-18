@@ -5,11 +5,11 @@ logado.innerHTML = "Olá " + userLogado.nome
 
 if(localStorage.getItem("token") == null){
     alert("Você precisa estar logado para acessar essa página")
-    window.location.href = "https://kassemsan01.github.io/SafeU/Interface.html"
+    window.location.href = "Interface.html"
 }
 
 function sair(){
     localStorage.removeItem("token")
     localStorage.removeItem("userLogado")
-    window.location.href = "https://kassemsan01.github.io/SafeU/Interface.html"
+    window.location.href = "Interface.html"
 }
