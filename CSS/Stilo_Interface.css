@@ -144,6 +144,21 @@ img{
     display: none;
 }
 
+@media screen and (max-width: 768px) {
+    .container{
+        display: block;
+        background-image: none;
+    }
+
+    img{
+        width: 50vw;
+    }
+
+    .card{
+        margin: 2em 2em;
+    }
+}
+
 
 
 
