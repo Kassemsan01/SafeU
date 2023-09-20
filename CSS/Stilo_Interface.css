@@ -16,6 +16,7 @@ body{
     justify-content: center;
     width: 100%;
     margin-top: 100px;
+    
 }
 
 .card{
@@ -121,10 +122,12 @@ a:hover{
 }
 
 img{
-  position: fixed;
-  padding: 2px;
-  z-index: 1;
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  display: flex;
   justify-content: flex-start;
+  position:fixed;
 }
 
 .fa-eye{
@@ -144,14 +147,15 @@ img{
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1020px) {
     .container{
         display: block;
         background-image: none;
     }
 
     img{
-        width: 50vw;
+        position: relative;
+        display: flex;
     }
 
     .card{
