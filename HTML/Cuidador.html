@@ -3,11 +3,11 @@
 
 <head>
     <title>SafeU</title>
-    <link rel="stylesheet" href="stilo_Cuidador.css" />
-    <img href="#"><img src="LogoSafeU.png"
-        alt="logo do site" height="300" width="300"></img>
+    <link rel="stylesheet" href="../CSS/stilo_Cuidador.css" />
+    <img href="#"><img src="../LogoSafeU.png"
+        alt="logo do site" height="400" width="400"></img>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
-    <script src="Cuidador.js" defer></script>
+    <script src="../JS/Cuidador.js" defer></script>
         
 </head>
 
@@ -30,7 +30,7 @@
         </div>
 
         <div class="label-float">
-            <input type="text" id="telefone" placeholder="" required>
+            <input type="tel" id="telefone" placeholder="" autocomplete="tel" pattern="^\(\d{2}\)\d[4,5]-\d[4]$" required>
             <label id="LabelTelefone" for="telefone">Telefone</label>
         </div>
 

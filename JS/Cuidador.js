@@ -79,7 +79,7 @@ function cadastrar(){
         msgError.setAttribute("Style", "display: none")
 
         setTimeout(()=>{
-            window.location.href = "Tela_inicial.html"
+            window.location.href = "../HTML/Tela_inicial.html"
         },3000)
 
     } 
@@ -98,11 +98,11 @@ logado.innerHTML = "Olá " + userLogado.nome
 
 if(localStorage.getItem("token") == null){
     alert("Você precisa estar logado para acessar essa página")
-    window.location.href = "Interface.html"
+    window.location.href = "../HTML/Interface.html"
 }
 
 function voltar(){
-    window.location.href = "Tela_inicial.html"
+    window.location.href = "../HTML/Tela_inicial.html"
 }
 
 function SOS(){

@@ -98,7 +98,7 @@ function cadastrar(){
         msgError.setAttribute("Style", "display: none")
 
         setTimeout(()=>{
-            window.location.href = "http://127.0.0.1:5500/Interface.html"
+            window.location.href = "../HTML/Interface.html"
         },3000)
 
     } 
