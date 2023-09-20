@@ -133,3 +133,7 @@ btnConfirm.addEventListener('click', ()=>{
         inputConfirmSenha.setAttribute('type', 'password')
     }
 })
+
+function voltar(){
+    window.location.href = "../HTML/Interface.html"
+}
