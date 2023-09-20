@@ -101,8 +101,10 @@ if(localStorage.getItem("token") == null){
     window.location.href = "Interface.html"
 }
 
-function sair(){
-    localStorage.removeItem("token")
-    localStorage.removeItem("userLogado")
-    window.location.href = "Interface.html"
+function voltar(){
+    window.location.href = "Tela_inicial.html"
+}
+
+function SOS(){
+    
 }

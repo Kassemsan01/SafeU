@@ -107,7 +107,8 @@ img{
     position: fixed;
     padding: 2px;
     z-index: 1;
-    justify-content: flex-start;
+    margin: 100px;
+    
   }
 
 
@@ -139,61 +140,6 @@ img{
 }
 
 
-#menu-h{
-    background-color: rgb(37, 37, 39);
-}
-
-#menu-h ul {
-    max-width:750px;
-    list-style: none;
-    padding: 110px;
-}
-
-#menu-h ul li {
-    display: inline;
-}
-
-#menu-h ul li a {
-    color: #FFF;
-    padding: 20px;
-    display: inline-block;
-    text-decoration: none;
-    transition: background .4s;
-    border-radius: 10px;
-}
-
-#menu-h ul li a:hover {
-    background-color: rgb(24, 139, 233);
-}
-
-#menu-h ul li:last-child a {
-    float: right;
-    background-color: rgb(24, 139, 233);
-}
-
-.justify-center button{
-    background-color: transparent;
-    border:none;
-    color: #fff;
-    padding: 20px;
-    font-size: 12pt;
-    border-radius: 10px;
-    cursor: pointer;
-    outline: none;
-    
-}
-
-.justify-center button:hover{
-    background-color: rgb(24, 139, 233);
-    color: #fff;
-}
-
-.justify-center{
-    justify-content: center;
-    display: inline;
-    display: inline-block;
-}
-
 .justify button{
     background-color: red;
     border-color: #ff000080;
@@ -217,4 +163,29 @@ img{
 .justify{
     justify-content: center;
     display: flex;
+}
+
+.voltar button{
+    background-color: transparent;
+    border-color: #272262;
+    color: #272262;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s ease-out;
+}
+
+.voltar button:hover{
+    background-color: #272262;
+    color: #fff;
+}
+
+.voltar{
+    display: flex;
+    justify-content: center;
+
 }
