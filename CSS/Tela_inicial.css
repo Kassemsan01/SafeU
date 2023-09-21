@@ -12,7 +12,7 @@
 }
 
 #menu-h ul {
-    max-width:749px;
+    max-width:850px;
     list-style: none;
     padding: 0;
 }
@@ -68,7 +68,10 @@ img{
     z-index: 1;
     justify-content: flex-start;
     max-width: 20%;
-    max-height: 50%;
+    max-height: 45%;
+    border-radius: 700px;
+    margin: -50px;
+    top: 54px;
 }
 
 .justify button{
