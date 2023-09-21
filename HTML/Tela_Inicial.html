@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela_inicial</title>
     <script src="../JS/Tela_inicio.js" defer></script>
+    <script src="../JS/Medicamento.js" defer></script>
     <link rel="stylesheet" href="../CSS/Tela_inicial.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <img href="#"><img src="../LogoSafeU.png"
@@ -28,7 +29,7 @@
                 </a>
             </li>
             
-            <li><a href="#">Medicamento</a></li>
+            <li><a href="Medicamento.html">Medicamento</a></li>
             <li><a href="#">Notas</a></li>
             <li><a href="#">Saúde</a></li>
             <li>
@@ -48,6 +49,16 @@
     <div class="justify">
         <button onclick="entrar()">SOS</button>
     </div>
+
+    <script>
+        const alarmMessage= localStorage.getItem("alarmMessage");
+
+if (alarmMessage){
+    alert(alarmMessage);
+
+    localStorage.removeItem("alarmMessage");
+}
+    </script>
 
 </body>
 

@@ -13,3 +13,11 @@ function sair(){
     localStorage.removeItem("userLogado")
     window.location.href = "../HTML/Interface.html"
 }
+
+const alarmMessage= localStorage.getItem("alarmMessage");
+
+if (alarmMessage){
+    alert(alarmMessage);
+
+    localStorage.removeItem("alarmMessage");
+}
