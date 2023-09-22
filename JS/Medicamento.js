@@ -1,3 +1,26 @@
+let nome = document.querySelector("#nome")
+let LabelNome = document.querySelector("#LabelNome")
+let validNome = false
+
+
+nome.addEventListener("keyup", ()=>{
+    if(nome.value.length <=2){
+        LabelNome.setAttribute("style", "color: red")
+        LabelNome.innerHTML = '<strong> nome *Insira no minimo 3 caracteres</strong>'
+        nome.setAttribute("style", "border-color: red")
+        validNome = false
+    } else{
+        LabelNome.setAttribute("style", "color: green")
+        LabelNome.innerHTML = "nome"
+        nome.setAttribute("style", "border-color: green")
+        validNome = true
+    }
+})
+
+
+
+
+
 function setAlarm() {
 
     const hour = parseInt(document.getElementById('hour').value);
@@ -71,22 +94,20 @@ function voltar(){
 
 
 function cadastrar(){
-    if(validNome && validTelefone && validCoren){
+    if(validNome){
 
-        let listaCuid = JSON.parse(localStorage.getItem("listaCuid") || "[]")
+        let listaRemedio = JSON.parse(localStorage.getItem("listaRemedio") || "[]")
 
         listaCuid.push(
             {
-                nomeCad: nome.value,
-                corCad: coren.value,
-                telCad: telefone.value
+                nomeCad: nome.value
             }
         )
 
-        localStorage.setItem("listaCuid", JSON.stringify(listaCuid))
+        localStorage.setItem("listaRemedio", JSON.stringify(listaRemedio))
 
         msgSuccess.setAttribute("Style", "display: block")
-        msgSuccess.innerHTML = "<strong>Cadastrando Cuidador...</strong>"
+        msgSuccess.innerHTML = "<strong>Cadastrando remedio...</strong>"
         msgError.innerHTML = ""
         msgError.setAttribute("Style", "display: none")
 
