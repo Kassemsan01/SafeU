@@ -1,72 +1,72 @@
 
 
-    const remedioForm = document.getElementById('remedioForm');
+const remedioForm = document.getElementById('remedioForm');
 
-    const remediosList = document.getElementById('remedios');
+const remediosList = document.getElementById('remedios');
 
- 
 
-    function cadastrarRemedio(){
 
-        const nome = document.getElementById('nome').value;
+function cadastrarRemedio() {
 
-        const horario = document.getElementById('horario').value;
+    const nome = document.getElementById('nome').value;
 
-        const dias = document.getElementById('dias').value;
+    const horario = document.getElementById('horario').value;
 
-        const quantidade = document.getElementById('quantidade').value;
+    const dias = document.getElementById('dias').value;
 
-        const informacoes = document.getElementById('informacoes').value;
+    const quantidade = document.getElementById('quantidade').value;
 
- 
+    const informacoes = document.getElementById('informacoes').value;
 
-        const remedio = {
 
-            nome,
 
-            horario,
+    const remedio = {
 
-            dias,
+        nome,
 
-            quantidade,
+        horario,
 
-            informacoes,
+        dias,
 
-        };
+        quantidade,
 
- 
+        informacoes,
 
-        const remediosCadastrados = JSON.parse(localStorage.getItem('remedios')) || [];
+    };
 
-        remediosCadastrados.push(remedio);
 
- 
 
-        localStorage.setItem('remedios', JSON.stringify(remediosCadastrados));
+    const remediosCadastrados = JSON.parse(localStorage.getItem('remedios')) || [];
 
- 
+    remediosCadastrados.push(remedio);
 
-        remedioForm.reset();
 
-        atualizarListaRemedios();
 
-    }
+    localStorage.setItem('remedios', JSON.stringify(remediosCadastrados));
 
- 
 
-    function atualizarListaRemedios() {
 
-        remediosList.innerHTML = '';
+    remedioForm.reset();
 
-        const remediosCadastrados = JSON.parse(localStorage.getItem('remedios')) || [];
+    atualizarListaRemedios();
 
- 
+}
 
-        remediosCadastrados.forEach((remedio, index) => {
 
-            const remedioItem = document.createElement('li');
 
-            remedioItem.innerHTML = `
+function atualizarListaRemedios() {
+
+    remediosList.innerHTML = '';
+
+    const remediosCadastrados = JSON.parse(localStorage.getItem('remedios')) || [];
+
+
+
+    remediosCadastrados.forEach((remedio, index) => {
+
+        const remedioItem = document.createElement('li');
+
+        remedioItem.innerHTML = `
 
                 <strong>${remedio.nome}</strong><br>
 
@@ -82,27 +82,31 @@
 
             `;
 
-            remediosList.appendChild(remedioItem);
+        remediosList.appendChild(remedioItem);
 
-        });
+    });
 
-    }
+}
 
- 
 
-    function removerRemedio(index) {
 
-        const remediosCadastrados = JSON.parse(localStorage.getItem('remedios')) || [];
+function removerRemedio(index) {
 
-        remediosCadastrados.splice(index, 1);
+    const remediosCadastrados = JSON.parse(localStorage.getItem('remedios')) || [];
 
-        localStorage.setItem('remedios', JSON.stringify(remediosCadastrados));
+    remediosCadastrados.splice(index, 1);
 
-        atualizarListaRemedios();
-
-    }
-
- 
+    localStorage.setItem('remedios', JSON.stringify(remediosCadastrados));
 
     atualizarListaRemedios();
+
+}
+
+
+
+atualizarListaRemedios();
+
+function voltar() {
+    window.location.href = "../HTML/Tela_Inicial.html"
+}
 

@@ -12,7 +12,7 @@
 }
 
 #menu-h ul {
-    max-width:850px;
+    max-width:900px;
     list-style: none;
     padding: 0;
 }
@@ -108,5 +108,53 @@
     max-height: 50%;
     margin: 30px;
     top: 15%;
-    right: 40%;
+    right: 38%;
+    border-radius: 100px;
+}
+
+
+
+button {
+
+    background-color: #007BFF;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+ 
+
+button:hover {
+
+    background-color: #0056b3;
+
+}
+
+
+
+#listaRemedios {
+
+    margin-top: 500px;
+    text-align: center;
+
+}
+
+li{
+
+    font-size: 13pt;
+    color: #272262;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #272262;
 }

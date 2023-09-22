@@ -1,8 +1,11 @@
 body {
 
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 
     text-align: center;
+
+    box-sizing: border-box;
+    
 
 }
 
@@ -20,11 +23,27 @@ form {
 
     border-radius: 5px;
 
+    background-color: #33333325;
+
+    padding: 30px;
+
+    border-radius: 4%;
+
+    box-shadow: 3px 3px 1px 0px #00000060;
+
+    width: 400px;
+
 }
 
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #272262;
+}
  
 
-label, input, textarea {
+textarea {
 
     display: block;
 
@@ -64,4 +83,79 @@ button:hover {
 
     margin-top: 30px;
 
+    text-align: center;
+    margin-bottom: 20px;
+    color: #272262;
+
+    
+
+}
+
+
+input{
+    width: 100%;
+    padding: 5px 5px;
+    display: block;
+    border: 0;
+    border-bottom: 2px solid #272262;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+
+
+
+label{
+
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: block;
+
+    margin-bottom: 10px;
+    
+}
+
+
+img{
+
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position:fixed;
+}
+
+
+.justify button{
+    background-color: red;
+    border-color: #ff000080;
+    color: white;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 13pt;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s ease-out;
+    position: fixed;
+    margin: 2%;
+}
+
+.justify button:hover{
+    background-color: #ff000080;
+    color: #fff;
+}
+
+.justify{
+    justify-content: center;
+    display: flex;
 }

@@ -27,9 +27,20 @@
                     Sobre
                 </a>
             </li>
+
             
-            <li><a href="Medicamento.html">Medicamento</a></li>
-            <li><a href="#">Notas</a></li>
+            <li>
+                <a href="Medicamento.html">
+                    Medicamento
+                </a>
+            </li>
+
+
+            <li>
+                <a href="../HTML/Notas.html">
+                    Notas
+                </a>
+            </li>
             <li><a href="#">Saúde</a></li>
             <li>
                 <a href="../HTML/Cuidador.html">
@@ -46,9 +57,9 @@
     </nav>
 
     <div class="cartela">
-        <img href="#"><img src="../IMAGENS/remedio1.png"
+        <img href="#"><img src="../IMAGENS/MicrosoftTeams-image.png"
              alt="imagem da cartela de remedio"
-             height="300" width="400"
+             height="200" width="400"
         >
 
     </div>
@@ -58,8 +69,18 @@
         alt="logo do site" height="300" width="300"></img>
     </div>
 
+
+    <div id="listaRemedios">
+
+        <h2>Lista de Remédios Cadastrados</h2>
+
+        <ul id="remedios"></ul>
+
+    </div>
+
+
     <div class="justify">
-        <button onclick="entrar()">SOS</button>
+        <button onclick="SOS()">SOS</button>
     </div>
 
     <script>
@@ -71,6 +92,11 @@ if (alarmMessage){
     localStorage.removeItem("alarmMessage");
 }
     </script>
+
+
+<h1>Suas Notas</h1>
+
+<ul id="note-list"></ul>
 
 </body>
 
