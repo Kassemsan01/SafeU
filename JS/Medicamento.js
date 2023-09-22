@@ -48,6 +48,8 @@ function setAlarm() {
 
         if (timeDifference >= 0) {
 
+            let listaAlarme = JSON.parse(localStorage.getItem("listaAlarme") || "[]")
+
             setTimeout(function() {
 
                 localStorage.setItem("alarmMessage", "Alarme disparado!");

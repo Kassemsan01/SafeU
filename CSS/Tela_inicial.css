@@ -62,7 +62,7 @@
     display: inline-block;
 }
 
-img{
+.logo{
     position: fixed;
     padding: 2px;
     z-index: 1;
@@ -97,4 +97,16 @@ img{
 .justify{
     justify-content: center;
     display: flex;
+}
+
+.cartela{
+    position:absolute;
+    padding: 2px;
+    z-index: 1;
+    justify-content:center;
+    max-width: 50%;
+    max-height: 50%;
+    margin: 30px;
+    top: 15%;
+    right: 40%;
 }
