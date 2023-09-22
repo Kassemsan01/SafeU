@@ -101,7 +101,7 @@
 
 .cartela{
     position:absolute;
-    padding: 2px;
+    padding: 5px;
     z-index: 1;
     justify-content:center;
     max-width: 50%;
@@ -109,7 +109,7 @@
     margin: 30px;
     top: 15%;
     right: 38%;
-    border-radius: 100px;
+    border-radius: 50%;
 }
 
 
@@ -157,4 +157,21 @@ h2{
     text-align: center;
     margin-bottom: 20px;
     color: #272262;
+}
+
+h1{
+
+    text-align: end;
+    top: 500px;
+
+}
+
+.bord{
+
+    background-color: #33333325;
+    padding: 20px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000060;
+    width: 30%;
+    max-height: 900%;
 }
