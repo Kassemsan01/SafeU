@@ -104,13 +104,16 @@ h1{
 
 
 img{
-    height: 250px;
-    width: 250px;
-    border-radius: 100%;
-    display: flex;
+    position: fixed;
+    padding: 2px;
+    z-index: 1;
     justify-content: flex-start;
-    position:fixed;
-    
+    max-width: 20%;
+    max-height: 45%;
+    border-radius: 700px;
+    margin: -50px;
+    top: 200px;
+    right: 1300px;
   }
 
 
