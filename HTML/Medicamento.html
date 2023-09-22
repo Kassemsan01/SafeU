@@ -1,87 +1,76 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-br">
 
 <head>
 
-    <title>Alarme</title>
+    <meta charset="UTF-8">
 
-    <link rel="stylesheet" type="text/css" href="../CSS/Medicamento.css">
-    <script src="../JS/Medicamento.js"></script>
-    <img href="#"><img src="../IMAGENS/LogoSafeU.png" alt="logo do site"></img>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Remédio</title>
+
+    <link rel="stylesheet" href="../CSS/Medicamento.css">
+
+    <script src="../JS/Medicamento.js" defer></script>
 
 </head>
 
 <body>
-    <div class="container">
-        <div class="card">
 
-            <h1>Remédio cadastro</h1>
+    <h1>Cadastro de Remédio</h1>
 
-            <div class="label-float">
-                <input type="text" id="nome" placeholder="" required>
-                <label id="LabelNome" for="nome">Nome do Medicamento</label>
-            </div>
+    <form id="remedioForm">
 
+        <label for="nome">Nome do Remédio:</label>
 
+        <input type="text" id="nome" required><br>
 
-            <div class="alarm-container">
-                
-                <label for="hour">Hora:</label>
+ 
 
-                <input type="number" id="hour" min="0" max="23">
+        <label for="horario">Horário do Alarme:</label>
 
-                <label for="minute">Minuto:</label>
+        <input type="time" id="horario" required><br>
 
-                <input type="number" id="minute" min="0" max="59">
+ 
 
-                <label for="repeat">Repetir por quantos dias:</label>
+        <label for="dias">Dias de Repetição:</label>
 
-                <input type="number" id="repeat" min="1">
+        <input type="number" id="dias" required><br>
 
+ 
 
+        <label for="quantidade">Quantidade a Tomar:</label>
 
+        <input type="text" id="quantidade" required><br>
 
-            </div>
+ 
 
-            <div class="alarme">
-                <button onclick="setAlarm()">Definir Alarme</button>
-            </div>
+        <label for="informacoes">Informações Adicionais:</label>
 
-            <div class="quantidade">
+        <textarea id="informacoes"></textarea><br>
 
-                <label for="Quant">Quantidade</label>
-
-                <input type="number" id="quantidade" min="1" max="60">
-
-                
-            </div>
-
-            <label>Informações</label>
-                <textarea placeholder="Digite Informações sobre o remedio" minlength=20 
-                 maxlength=50 rows=5></textarea>
-
-
-            <div class="justify-center">
-                <button onclick="cadastrar()">Cadastrar</button>
-            </div>
-
-
-            <div class="voltar">
-                <button onclick="voltar()">Voltar</button>
-            </div>
-
-
-
-
-
+ 
+        <div class="cadastrar">
+            <button onclick="cadastrarRemedio()">Cadastrar</button>
         </div>
 
+        
+
+    </form>
+
+ 
+
+    <div id="listaRemedios">
+
+        <h2>Lista de Remédios Cadastrados</h2>
+
+        <ul id="remedios"></ul>
+
     </div>
 
-    <div class="justify">
-        <button onclick="SOS()">SOS</button>
-    </div>
+ 
+
 
 
 </body>

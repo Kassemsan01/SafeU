@@ -1,276 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+    text-align: center;
+
 }
 
-body{
-    background: white;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
+ 
 
-.container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 100px;
-}
+form {
 
-.card{
-    background-color: #33333325;
-    padding: 30px;
-    border-radius: 4%;
-    box-shadow: 3px 3px 1px 0px #00000060;
+    margin: 20px auto;
+
     max-width: 400px;
-}
 
-h1{
-    text-align: center;
-    margin-bottom: 20px;
-    color: #272262;
-}
+    padding: 20px;
 
+    border: 1px solid #ccc;
 
-
-.alarm-container input{
-    width: 50%;
-    padding: 5px 5px;
-    display: inline-block;
-    border: 0;
-    border-bottom: 2px solid #272262;
-    background-color: transparent;
-    outline: none;
-    min-width: 300px;
-    font-size: 16px;
-    transition: all 0.3s ease-out;
-    border-radius: 0;
-}
-
-.alarm-container{
-    justify-content: center;
-    padding-top: 20px;
-    margin-top: 15%;
-    margin-bottom: 15%;
-}
-
-.alarm-container label{
-    right: 100%;
-}
-
-
-
-
-
-.label-float input{
-    width: 100%;
-    padding: 5px 5px;
-    display: inline-block;
-    border: 0;
-    border-bottom: 2px solid #272262;
-    background-color: transparent;
-    outline: none;
-    min-width: 180px;
-    font-size: 16px;
-    transition: all 0.3s ease-out;
-    border-radius: 0;
-}
-
-.label-float{
-    position: relative;
-    padding-top: 13px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.label-float input:focus{
-    border-bottom: 2px solid #4038a0;
-}
-
-.label-float label{
-    color: #272262;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 13px;
-    transition: all 0.3s ease-out;
-}
-
-.label-float input:focus + label, 
-.label-float input:valid + label{
-    font-size: 13px;
-    margin-top: 0;
-    color: #4038a0;
-}
-
-.justify-center button{
-    background-color: transparent;
-    border-color: #272262;
-    color: #272262;
-    padding: 7px;
-    font-weight: bold;
-    font-size: 12pt;
-    margin-top: 25px;
-    border-radius: 4px;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.4s ease-out;
-}
-
-.justify-center button:hover{
-    background-color: #272262;
-    color: #fff;
-}
-
-.justify-center{
-    display: flex;
-    justify-content: center;
+    border-radius: 5px;
 
 }
 
+ 
 
-img{
-    height: 250px;
-    width: 250px;
-    border-radius: 100%;
-    display: flex;
-    justify-content: flex-start;
-    position:fixed;
-    
-  }
+label, input, textarea {
 
+    display: block;
 
-.fa-eye{
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    cursor: pointer;
-    color: #272262;
-}
-
-#msgError{
-    text-align: center;
-    color: #ff0000;
-    background-color: #ffbbbb;
-    padding: 10px;
-    border-radius: 4px;
-    display: none;
-}
-
-#msgSuccess{
-    text-align: center;
-    color: #00bb00;
-    background-color: #bbffbe;
-    padding: 10px;
-    border-radius: 4px;
-    display: none;
+    margin-bottom: 10px;
 
 }
 
+ 
 
-.justify button{
-    background-color: red;
-    border-color: #ff000080;
+button {
+
+    background-color: #007BFF;
+
     color: white;
-    padding: 7px;
-    font-weight: bold;
-    font-size: 12pt;
-    border-radius: 50px;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
     cursor: pointer;
-    outline: none;
-    transition: all 0.4s ease-out;
-    position:relative;
-    margin: 33%;
-    top: -500px;
-}
-
-.justify button:hover{
-    background-color: #ff000080;
-    color: #fff;
-}
-
-.justify{
-    justify-content: center;
-    display: flex;
-}
-
-.voltar button{
-    background-color: transparent;
-    border-color: #272262;
-    color: #272262;
-    padding: 7px;
-    font-weight: bold;
-    font-size: 12pt;
-    margin-top: 25px;
-    border-radius: 4px;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.4s ease-out;
-}
-
-.voltar button:hover{
-    background-color: #272262;
-    color: #fff;
-}
-
-.voltar{
-    display: flex;
-    justify-content: center;
 
 }
 
-.alarme button{
-    background-color: transparent;
-    border-color: #272262;
-    color: #272262;
-    padding: 6px;
-    font-weight: bold;
-    font-size: 12pt;
-    border-radius: 4px;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.4s ease-out;
+ 
+
+button:hover {
+
+    background-color: #0056b3;
+
 }
 
-.alarme button:hover{
-    background-color: #272262;
-    color: #fff;
+ 
+
+#listaRemedios {
+
+    margin-top: 30px;
+
 }
-
-.alarme{
-    display: flex;
-    justify-content: center;
-}
-
-
-.quantidade input{
-    width: 50%;
-    padding: 5px 5px;
-    display: inline-block;
-    border: 0;
-    border-bottom: 2px solid #272262;
-    background-color: transparent;
-    outline: none;
-    min-width: 300px;
-    font-size: 16px;
-    transition: all 0.3s ease-out;
-    border-radius: 0;
-}
-
-.quantidade{
-    justify-content: center;
-    padding-top: 20px;
-    margin-top: 15%;
-    margin-bottom: 15%;
-}
-
-.quantidade label{
-    right: 100%;
-}
-
-

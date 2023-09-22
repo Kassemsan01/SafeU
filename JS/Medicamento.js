@@ -1,135 +1,108 @@
-let nome = document.querySelector("#nome")
-let LabelNome = document.querySelector("#LabelNome")
-let validNome = false
 
 
-nome.addEventListener("keyup", ()=>{
-    if(nome.value.length <=2){
-        LabelNome.setAttribute("style", "color: red")
-        LabelNome.innerHTML = '<strong> nome *Insira no minimo 3 caracteres</strong>'
-        nome.setAttribute("style", "border-color: red")
-        validNome = false
-    } else{
-        LabelNome.setAttribute("style", "color: green")
-        LabelNome.innerHTML = "nome"
-        nome.setAttribute("style", "border-color: green")
-        validNome = true
-    }
-})
+    const remedioForm = document.getElementById('remedioForm');
 
-
-
-
-
-function setAlarm() {
-
-    const hour = parseInt(document.getElementById('hour').value);
-
-    const minute = parseInt(document.getElementById('minute').value);
-
-    const repeatDays = parseInt(document.getElementById('repeat').value);
+    const remediosList = document.getElementById('remedios');
 
  
 
-    if (isNaN(hour) || isNaN(minute) || isNaN(repeatDays) || hour < 0 || hour > 23 || minute < 0 || minute > 59 || repeatDays < 1) {
+    function cadastrarRemedio(){
 
-        alert('Por favor, insira uma hora, minuto e número de dias válidos.');
+        const nome = document.getElementById('nome').value;
 
-        return;
+        const horario = document.getElementById('horario').value;
 
-    }
+        const dias = document.getElementById('dias').value;
 
- 
+        const quantidade = document.getElementById('quantidade').value;
 
-    const now = new Date();
-
-    const alarmTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), hour, minute);
+        const informacoes = document.getElementById('informacoes').value;
 
  
 
-    const timeDifference = alarmTime - now;
+        const remedio = {
 
-    
+            nome,
 
-    if (timeDifference <= 0) {
+            horario,
 
-        alert('O alarme deve ser definido para um horário futuro.');
+            dias,
 
-        return;
+            quantidade,
+
+            informacoes,
+
+        };
+
+ 
+
+        const remediosCadastrados = JSON.parse(localStorage.getItem('remedios')) || [];
+
+        remediosCadastrados.push(remedio);
+
+ 
+
+        localStorage.setItem('remedios', JSON.stringify(remediosCadastrados));
+
+ 
+
+        remedioForm.reset();
+
+        atualizarListaRemedios();
 
     }
 
  
 
-    for (let i = 0; i < repeatDays; i++) {
+    function atualizarListaRemedios() {
 
-        const alarmDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() + i, hour, minute);
+        remediosList.innerHTML = '';
 
-        const timeDifference = alarmDate - now;
+        const remediosCadastrados = JSON.parse(localStorage.getItem('remedios')) || [];
 
-        
+ 
 
-        if (timeDifference >= 0) {
+        remediosCadastrados.forEach((remedio, index) => {
 
-            let listaAlarme = JSON.parse(localStorage.getItem("listaAlarme") || "[]")
+            const remedioItem = document.createElement('li');
 
-            setTimeout(function() {
+            remedioItem.innerHTML = `
 
-                localStorage.setItem("alarmMessage", "Alarme disparado!");
+                <strong>${remedio.nome}</strong><br>
 
-                alert('Alarme disparado!');
+                Horário: ${remedio.horario}<br>
 
-            }, timeDifference);
+                Dias de Repetição: ${remedio.dias}<br>
 
-        }
+                Quantidade: ${remedio.quantidade}<br>
+
+                Informações: ${remedio.informacoes}
+
+                <button onclick="removerRemedio(${index})">Remover</button>
+
+            `;
+
+            remediosList.appendChild(remedioItem);
+
+        });
 
     }
 
-}
+ 
 
+    function removerRemedio(index) {
 
-function voltar(){
-    window.location.href = "../HTML/Tela_inicial.html"
-}
+        const remediosCadastrados = JSON.parse(localStorage.getItem('remedios')) || [];
 
+        remediosCadastrados.splice(index, 1);
 
-function cadastrar(){
-    if(validNome){
+        localStorage.setItem('remedios', JSON.stringify(remediosCadastrados));
 
-        let listaRemedio = JSON.parse(localStorage.getItem("listaRemedio") || "[]")
+        atualizarListaRemedios();
 
-        listaCuid.push(
-            {
-                nomeCad: nome.value
-            }
-        )
-
-        localStorage.setItem("listaRemedio", JSON.stringify(listaRemedio))
-
-        msgSuccess.setAttribute("Style", "display: block")
-        msgSuccess.innerHTML = "<strong>Cadastrando remedio...</strong>"
-        msgError.innerHTML = ""
-        msgError.setAttribute("Style", "display: none")
-
-        setTimeout(()=>{
-            window.location.href = "../HTML/Tela_inicial.html"
-        },3000)
-
-    } 
-    else{
-        msgError.setAttribute("Style", "display: block")
-        msgError.innerHTML = "<strong>Preencha todos os campos corretamente antes de cadastrar</strong>"
-        msgSuccess.innerHTML = ""
-        msgSuccess.setAttribute("Style", "display: none")
     }
-}
 
-let userLogado = JSON.parse(localStorage.getItem("userLogado"))
-let logado = document.querySelector("#logado")
+ 
 
-logado.innerHTML = "Olá " + userLogado.nome
+    atualizarListaRemedios();
 
-if(localStorage.getItem("token") == null){
-    alert("Você precisa estar logado para acessar essa página")
-    window.location.href = "../HTML/Interface.html"
-}
