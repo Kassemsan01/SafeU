@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         listItem.textContent = `Nota ${index + 1}: ${note}`;
 
+        listItem.classList.add("note-item");
+
         noteList.appendChild(listItem);
 
     });

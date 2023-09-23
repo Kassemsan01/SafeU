@@ -159,11 +159,39 @@ h2{
     color: #272262;
 }
 
-h1{
 
-    text-align: end;
-    top: 500px;
 
+
+.bordas{
+    background-color: #33333325;
+    padding: 20px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000060;
+    width: 30%;
+    max-height: 900%;
+
+}
+
+.note-item{
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #ffff80;
+    border: 1px solid #ccc;
+    text-align: start;
+    right: 100px;
+    top: 50;
+}
+
+
+.bordas{
+    right: 100%;
+}
+
+
+.note-item p{
+    margin: 0;
+    font-size: 16px;
+    color: #333;
 }
 
 .bord{
