@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.conteiner img{
+    width: 100%;
+    height: 300px;
+    position:relative;
+    justify-content: center;
+    right: 0;
+}
+
+.conteiner h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #272262;
+}
+
+.conteiner p{
+    justify-content: center;
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+    text-align:left;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 20px;
+}
