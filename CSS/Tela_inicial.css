@@ -12,7 +12,7 @@
 }
 
 #menu-h ul {
-    max-width:900px;
+    max-width:650px;
     list-style: none;
     padding: 0;
 }
@@ -101,7 +101,7 @@
 
 .cartela{
     position:relative;
-    padding: 5px;
+    padding: 10px;
     z-index: 1;
     justify-content:center;
     max-width: 50%;
