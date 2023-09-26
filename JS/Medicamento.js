@@ -76,9 +76,9 @@ function atualizarListaRemedios() {
 
                 Quantidade: ${remedio.quantidade}<br>
 
-                Informações: ${remedio.informacoes}
+                Informações: ${remedio.informacoes}<br>
 
-                <button onclick="removerRemedio(${index})">Remover</button>
+                <br><button onclick="removerRemedio(${index})">Remover</button>
 
             `;
 
