@@ -102,7 +102,7 @@ if(localStorage.getItem("token") == null){
 }
 
 function voltar(){
-    window.location.href = "../HTML/Tela_inicial.html"
+    window.location.href = "../HTML/Tela_Inicial.html"
 }
 
 function SOS(){
