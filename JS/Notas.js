@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Redirecione para a página de notas
 
-            window.location.href = "notas.html";
+            window.location.href = "../HTML/Notas.html";
 
         }
 
