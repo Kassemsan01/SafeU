@@ -100,16 +100,16 @@
 }
 
 .cartela{
-    position:absolute;
+    position:relative;
     padding: 5px;
     z-index: 1;
     justify-content:center;
     max-width: 50%;
-    max-height: 50%;
+    max-height: 0;
     margin: 30px;
-    top: 15%;
-    right: 38%;
     border-radius: 50%;
+    top: -400px;
+    min-width: 500px;
 }
 
 
@@ -169,13 +169,14 @@ h2{
     box-shadow: 3px 3px 1px 0px #00000060;
     width: 30%;
     max-height: 900%;
+    min-width: 600px;
 
 }
 
 .note-item{
     margin-bottom: 10px;
     padding: 5px;
-    background-color: #ffff80;
+    background-color: #c5c5bf38;
     border: 1px solid #ccc;
     text-align: start;
     right: 100px;
@@ -201,5 +202,6 @@ h2{
     border-radius: 4%;
     box-shadow: 3px 3px 1px 0px #00000060;
     width: 30%;
-    max-height: 900%;
+    max-height: 500%;
+    min-width: 600px;
 }

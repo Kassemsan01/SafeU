@@ -59,12 +59,25 @@
 }
 
 
+.logo{
+    position: fixed;
+    padding: 2px;
+    z-index: 1;
+    justify-content: flex-start;
+    max-width: 20%;
+    max-height: 45%;
+    border-radius: 700px;
+    margin: -50px;
+    top: 54px;
+}
+
+
 #menu-h{
     background-color: rgb(37, 37, 39);
 }
 
 #menu-h ul {
-    max-width:1000px;
+    max-width:2000px;
     list-style: none;
     padding: 0;
     text-align: center;
