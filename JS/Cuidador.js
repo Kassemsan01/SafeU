@@ -79,7 +79,7 @@ function cadastrar(){
         msgError.setAttribute("Style", "display: none")
 
         setTimeout(()=>{
-            window.location.href = "../HTML/Tela_inicial.html"
+            window.location.href = "../HTML/Tela_Inicial.html"
         },3000)
 
     } 
