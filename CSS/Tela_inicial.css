@@ -151,6 +151,17 @@ li{
 
     font-size: 13pt;
     color: #272262;
+    background-color: c5c5bf38;
+}
+
+.listaRemedios ul{
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #76767438;
+    border: 1px solid #ccc;
+    text-align: start;
+    right: 100px;
+    top: 50;
 }
 
 h2{
@@ -204,4 +215,7 @@ h2{
     width: 30%;
     max-height: 500%;
     min-width: 600px;
+
+
 }
+
