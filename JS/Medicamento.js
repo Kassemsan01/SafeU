@@ -102,6 +102,8 @@ function mostrarNotificacao(nome,quantidade) {
             if (permission === 'granted') {
 
                 new Notification(`Hora de tomar o remédio: ${nome}     Quantidade: ${quantidade}`);
+                alert(`Hora de tomar o remédio: ${nome}     
+                Quantidade: ${quantidade}`)
                 
 
             }
