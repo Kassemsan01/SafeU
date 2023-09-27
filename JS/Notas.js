@@ -46,14 +46,14 @@ function atualizarListaNotas() {
 
     notasCadastrados.forEach((notas, index) => {
 
-        const notasItem = document.createElement('li');
+        const notasItem = document.createElement('p');
 
         notasItem.innerHTML = `
 
-                Informações: ${notas.informacoes}<br>
+                <br>nota${index, 1}: ${notas.informacoes}<br>
 
                 <br><button onclick="removerNotas(${index})">Remover</button><br>
-
+                <p>__________________________________________________________________________________</p>
             `;
 
             NotasList.appendChild(notasItem);

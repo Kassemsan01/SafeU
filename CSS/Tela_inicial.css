@@ -145,12 +145,13 @@ button:hover {
 
     text-align: center;
     justify-content: flex-start;
-    background-color: #1f1f1e38;
+    background-color: #c3c3c038;
     border: 1px solid #ccc;
+    font-size: 16px;
 
 }
 
-li{
+ul{
 
     font-size: 13pt;
     color: #272262;
@@ -178,7 +179,7 @@ h2{
 
 
 .bordas{
-    background-color: #33333325;
+    background-color: #8b8b8b25;
     padding: 20px;
     border-radius: 4%;
     box-shadow: 3px 3px 1px 0px #00000060;
@@ -197,31 +198,36 @@ h2{
 }
 
 
-.notas p{
+.muda p{
     margin: 0;
-    font-size: 16px;
+    font-size: 20px;
     color: #333;
+    text-align: center;
 }
 
 .bord{
 
-    background-color: #33333325;
+    background-color: #cbcbcb25;
     padding: 20px;
     border-radius: 4%;
     box-shadow: 3px 3px 1px 0px #00000060;
     width: 40%;
-    float: left;
+    float:left;
     margin-right: 10px;
     top: 0;
     left: 0;
+    right: 20px;
 
 
 }
 
 
 .muda{
-    text-align: center;
-    justify-content: flex-start;
-    background-color: #1f1f1e38;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #efefea38;
     border: 1px solid #ccc;
+    text-align: center;
+    right: 100px;
+    top: 0;
 }

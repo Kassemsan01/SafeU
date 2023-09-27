@@ -124,7 +124,7 @@ function atualizarListaRemedios() {
 
     remediosCadastrados.forEach((remedio, index) => {
 
-        const remedioItem = document.createElement('li');
+        const remedioItem = document.createElement('ul');
 
         remedioItem.innerHTML = `
 
@@ -139,7 +139,7 @@ function atualizarListaRemedios() {
                 Informações: ${remedio.informacoes}<br>
 
                 <br><button onclick="removerRemedio(${index})">Remover</button><br>
-
+                <p>_____________________________________________________________________________________</p>
             `;
 
         remediosList.appendChild(remedioItem);
