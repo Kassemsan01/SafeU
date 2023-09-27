@@ -1,59 +1,88 @@
+const NotasForm = document.getElementById('NotasForm');
 
-document.addEventListener("DOMContentLoaded", function () {
+const NotasList = document.getElementById('notas');
 
-    const noteText = document.getElementById("note-text");
 
-    const saveButton = document.getElementById("save-button");
 
- 
+function cadastrarNotas() {
 
-    // Carrega as notas salvas, se existirem
+    const informacoes = document.getElementById('informacoes').value;
 
-    const savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
 
- 
+    const notas = {
 
-    // Carrega a nota salva, se existir
+        informacoes,
 
-    if (localStorage.getItem("note")) {
+    };
 
-        noteText.value = localStorage.getItem("note");
 
-    }
 
- 
+    const notasCadastrados = JSON.parse(localStorage.getItem('notas')) || [];
 
-    // Salva a nota no localStorage e no array de notas quando o botão for clicado
+    notasCadastrados.push(notas);
 
-    saveButton.addEventListener("click", function () {
 
-        const currentNote = noteText.value;
 
- 
+    localStorage.setItem('notas', JSON.stringify(notasCadastrados));
 
-        if (currentNote) {
 
-            savedNotes.push(currentNote);
 
-            localStorage.setItem("notes", JSON.stringify(savedNotes));
+    NotasForm.reset();
 
-            localStorage.setItem("note", currentNote);
+    atualizarListaNotas();
 
-            alert("Nota salva com sucesso!");
+}
 
- 
 
-            // Redirecione para a página de notas
 
-            window.location.href = "../HTML/Notas.html";
 
-        }
+function atualizarListaNotas() {
+
+    NotasList.innerHTML = '';
+
+    const notasCadastrados = JSON.parse(localStorage.getItem('notas')) || [];
+
+
+
+    notasCadastrados.forEach((notas, index) => {
+
+        const notasItem = document.createElement('li');
+
+        notasItem.innerHTML = `
+
+                Informações: ${notas.informacoes}<br>
+
+                <br><button onclick="removerNotas(${index})">Remover</button><br>
+
+            `;
+
+            NotasList.appendChild(notasItem);
 
     });
 
-});
+}
 
 
-function voltar(){
+
+
+
+function removerNotas(index) {
+
+    const notasCadastrados = JSON.parse(localStorage.getItem('notas')) || [];
+
+    notasCadastrados.splice(index, 1);
+
+    localStorage.setItem('notas', JSON.stringify(notasCadastrados));
+
+    atualizarListaNotas();
+
+}
+
+
+
+atualizarListaNotas();
+
+function voltar() {
     window.location.href = "../HTML/Tela_Inicial.html"
 }
+

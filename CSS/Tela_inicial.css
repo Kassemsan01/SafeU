@@ -87,6 +87,7 @@
     transition: all 0.4s ease-out;
     position: fixed;
     margin: 33%;
+    right: 16%;
 }
 
 .justify button:hover{
@@ -99,7 +100,7 @@
     display: flex;
 }
 
-.cartela{
+/* .cartela{
     position:relative;
     padding: 10px;
     z-index: 1;
@@ -110,13 +111,13 @@
     border-radius: 50%;
     top: -400px;
     min-width: 500px;
-}
+} */
 
 
 
 button {
 
-    background-color: #007BFF;
+    background-color: #000000;
 
     color: white;
 
@@ -142,8 +143,10 @@ button:hover {
 
 #listaRemedios {
 
-    margin-top: 500px;
     text-align: center;
+    justify-content: flex-start;
+    background-color: #1f1f1e38;
+    border: 1px solid #ccc;
 
 }
 
@@ -152,22 +155,23 @@ li{
     font-size: 13pt;
     color: #272262;
     background-color: c5c5bf38;
+    text-align: center;
 }
 
 .listaRemedios ul{
     margin-bottom: 10px;
-    padding: 5px;
-    background-color: #76767438;
-    border: 1px solid #ccc;
+    padding: 20px;
     text-align: start;
-    right: 100px;
-    top: 50;
+    margin-right: 10px;
+    position:relative;
 }
 
 h2{
     text-align: center;
     margin-bottom: 20px;
     color: #272262;
+    top:  0;
+    left: 0;
 }
 
 
@@ -178,29 +182,22 @@ h2{
     padding: 20px;
     border-radius: 4%;
     box-shadow: 3px 3px 1px 0px #00000060;
-    width: 30%;
-    max-height: 900%;
-    min-width: 600px;
-
+    width: 40%;
+    float: right;
 }
 
-.note-item{
+.notas{
     margin-bottom: 10px;
     padding: 5px;
     background-color: #c5c5bf38;
     border: 1px solid #ccc;
     text-align: start;
     right: 100px;
-    top: 50;
+    top: 0;
 }
 
 
-.bordas{
-    right: 100%;
-}
-
-
-.note-item p{
+.notas p{
     margin: 0;
     font-size: 16px;
     color: #333;
@@ -212,10 +209,19 @@ h2{
     padding: 20px;
     border-radius: 4%;
     box-shadow: 3px 3px 1px 0px #00000060;
-    width: 30%;
-    max-height: 500%;
-    min-width: 600px;
+    width: 40%;
+    float: left;
+    margin-right: 10px;
+    top: 0;
+    left: 0;
 
 
 }
 
+
+.muda{
+    text-align: center;
+    justify-content: flex-start;
+    background-color: #1f1f1e38;
+    border: 1px solid #ccc;
+}

@@ -128,7 +128,7 @@ function atualizarListaRemedios() {
 
         remedioItem.innerHTML = `
 
-                <strong>${remedio.nome}</strong><br>
+                <br><strong>${remedio.nome}</strong><br>
 
                 Horário: ${remedio.horario}<br>
 
@@ -138,7 +138,7 @@ function atualizarListaRemedios() {
 
                 Informações: ${remedio.informacoes}<br>
 
-                <br><button onclick="removerRemedio(${index})">Remover</button>
+                <br><button onclick="removerRemedio(${index})">Remover</button><br>
 
             `;
 
