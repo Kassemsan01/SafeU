@@ -141,7 +141,6 @@ function atualizarListaRemedios() {
                 Informações: ${remedio.informacoes}<br>
 
                 <br><button onclick="removerRemedio(${index})">Remover</button><br>
-                <p>_____________________________________________________________________________________</p>
             `;
 
         remediosList.appendChild(remedioItem);

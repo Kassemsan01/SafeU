@@ -26,7 +26,6 @@
     padding: 20px;
     display: inline-block;
     text-decoration: none;
-    transition: background .4s;
     border-radius: 10px;
 }
 
@@ -147,32 +146,14 @@ button:hover {
     justify-content: flex-start;
     background-color: #c3c3c038;
     border: 1px solid #ccc;
-    font-size: 16px;
+    font-size: 20px;
 
 }
 
-ul{
-
-    font-size: 13pt;
-    color: #272262;
-    background-color: c5c5bf38;
+#listaRemedios h2{
     text-align: center;
-}
-
-.listaRemedios ul{
-    margin-bottom: 10px;
-    padding: 20px;
-    text-align: start;
-    margin-right: 10px;
-    position:relative;
-}
-
-h2{
-    text-align: center;
-    margin-bottom: 20px;
-    color: #272262;
-    top:  0;
-    left: 0;
+    color: black;
+    padding-bottom: 1px solid #333;
 }
 
 
@@ -198,12 +179,6 @@ h2{
 }
 
 
-.muda p{
-    margin: 0;
-    font-size: 20px;
-    color: #333;
-    text-align: center;
-}
 
 .bord{
 
@@ -230,4 +205,5 @@ h2{
     text-align: center;
     right: 100px;
     top: 0;
+    padding-bottom: 1px solid #333;
 }

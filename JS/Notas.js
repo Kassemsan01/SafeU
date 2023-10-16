@@ -53,7 +53,7 @@ function atualizarListaNotas() {
                 <br>nota${index, 1}: ${notas.informacoes}<br>
 
                 <br><button onclick="removerNotas(${index})">Remover</button><br>
-                <p>__________________________________________________________________________________</p>
+                
             `;
 
             NotasList.appendChild(notasItem);
