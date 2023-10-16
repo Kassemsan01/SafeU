@@ -147,10 +147,12 @@ img{
     display: none;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (width <=1020px) {
     .container{
-        display: block;
+        display: flex;
         background-image: none;
+        top: 350px;
+        margin: 0;
     }
 
     img{
@@ -160,6 +162,10 @@ img{
 
     .card{
         margin: 2em 2em;
+    }
+
+    .card p{
+        font-size: 16px;
     }
 }
 
