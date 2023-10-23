@@ -185,6 +185,12 @@ button:hover {
 
 }
 
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #272262;
+}
+
 
 
 @media  (max-width:600px) {

@@ -14,12 +14,63 @@
 
     <script src="../JS/Medicamento.js" defer></script>
 
-    <img src="../IMAGENS/LogoSafeU.png"
-        alt="logo do site"></img>
+    <img src="../IMAGENS/LogoSafeU.png" alt="logo do site" class="logo">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 
 </head>
 
 <body>
+
+    <h1 id="logado"></h1>
+
+    <div class="hamburguer">
+        <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    </div>
+
+    <nav id="menu-h">
+        <ul>
+            <li>
+                <a href="../HTML/Tela_Inicial.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="../HTML/Sobre.html">
+                    Sobre
+                </a>
+            </li>
+
+
+            <li>
+                <a href="Medicamento.html">
+                    Medicamento
+                </a>
+            </li>
+
+
+            <li>
+                <a href="../HTML/Notas.html">
+                    Notas
+                </a>
+            </li>
+            <!-- <li><a href="#">Saúde</a></li> -->
+            <li>
+                <a href="../HTML/Cuidador.html">
+                    Cuidador
+                </a>
+            </li>
+            <!-- <li><a href="#">Configurações</a></li> -->
+
+            <div class="justify-center">
+                <button onclick="sair()">Sair</button>
+            </div>
+        </ul>
+
+    </nav>
 
     <h1>Cadastro de Remédio</h1>
 
@@ -29,39 +80,39 @@
 
         <input type="text" id="nome" required><br>
 
- 
+
 
         <label for="horario">Horário do Alarme:</label>
 
         <input type="time" id="horario" required><br>
 
 
- 
+
 
         <label for="dias">Dias de Repetição:</label>
 
         <input type="number" id="dias" required><br>
 
- 
+
 
         <label for="quantidade">Quantidade a Tomar:</label>
 
         <input type="text" id="quantidade" required><br>
 
- 
+
 
         <label for="informacoes">Informações Adicionais:</label>
 
         <textarea id="informacoes"></textarea><br>
 
- 
-        
-            <button onclick="cadastrarRemedio()">Cadastrar</button>
 
-            <button onclick="voltar()">Voltar</button>
-        
 
-        
+        <button onclick="cadastrarRemedio()">Cadastrar</button>
+
+        <button onclick="voltar()">Voltar</button>
+
+
+
 
     </form>
 
@@ -70,7 +121,7 @@
         <button onclick="SOS()">SOS</button>
     </div>
 
- 
+
 
 
 </body>

@@ -216,6 +216,12 @@ button:hover {
     display: none;
 }
 
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #272262;
+}
+
 
 
 @media screen and (max-width:600px) {

@@ -9,6 +9,68 @@ body {
 
 }
 
+.hamburguer{
+    display: none;
+}
+
+#menu-h{
+    background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+    max-width:2000px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+    border-radius: 10px;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(24, 139, 233);
+}
+
+
+
+.justify-center button{
+    background-color: transparent;
+    border:none;
+    color: #fff;
+    padding: 20px;
+    font-size: 12pt;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.justify-center button:hover{
+    background-color: rgb(24, 139, 233);
+    color: #fff;
+}
+
+.justify-center{
+    justify-content: center;
+    display: inline;
+    display: inline-block;
+}
+
  
 
 form {
@@ -158,4 +220,40 @@ img{
 .justify{
     justify-content: center;
     display: flex;
+}
+
+@media (max-width: 600px){
+    #logado{
+        font-size: 20px;
+    }
+
+    .hamburguer{
+        display:block;
+    }
+
+    .material-symbols-outlined{
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        background-color: #000000;
+    }
+    
+    .material-symbols-outlined:hover{
+        background-color: #0056b3;
+        color: #fff;
+    }
+
+    #menu-h{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    #remedioForm{
+        max-width: 300px;
+        padding-bottom: 10px;
+    }
 }

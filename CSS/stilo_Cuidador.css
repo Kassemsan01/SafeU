@@ -77,7 +77,7 @@ h1{
     color: #4038a0;
 }
 
-.justify-center button{
+.cadastrar button{
     background-color: transparent;
     border-color: #272262;
     color: #272262;
@@ -91,12 +91,12 @@ h1{
     transition: all 0.4s ease-out;
 }
 
-.justify-center button:hover{
+.cadastrar button:hover{
     background-color: #272262;
     color: #fff;
 }
 
-.justify-center{
+.cadastrar{
     display: flex;
     justify-content: center;
 
@@ -157,7 +157,7 @@ img{
     outline: none;
     transition: all 0.4s ease-out;
     position: fixed;
-    margin: 33%;
+    margin: 115%;
     top: 150px;
 }
 
@@ -194,4 +194,102 @@ img{
     display: flex;
     justify-content: center;
 
+}
+
+.hamburguer{
+    display: none;
+}
+
+
+#menu-h{
+    background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+    max-width:2000px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+    border-radius: 10px;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(24, 139, 233);
+}
+
+
+.justify-center button{
+    background-color: transparent;
+    border:none;
+    color: #fff;
+    padding: 20px;
+    font-size: 12pt;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.justify-center button:hover{
+    background-color: rgb(24, 139, 233);
+    color: #fff;
+}
+
+.justify-center{
+    justify-content: center;
+    display: inline;
+    display: inline-block;
+}
+
+#logado{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #272262;
+}
+
+
+
+
+@media (max-width: 600px){
+    #logado{
+        font-size: 20px;
+    }
+
+    .hamburguer{
+        display:block;
+    }
+
+    .material-symbols-outlined{
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        background-color: #000000;
+    }
+    
+    .material-symbols-outlined:hover{
+        background-color: #0056b3;
+        color: #fff;
+    }
+
+    #menu-h{
+        display: none;
+    }
 }
