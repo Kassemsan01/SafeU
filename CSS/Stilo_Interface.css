@@ -147,7 +147,7 @@ img{
     display: none;
 }
 
-@media screen and (width <=1020px) {
+@media screen and (width <=600px) {
     .container{
         display: flex;
         background-image: none;
@@ -158,6 +158,9 @@ img{
     img{
         position: relative;
         display: flex;
+        z-index: 2;
+        width: 200px;
+        height: 200px;
     }
 
     .card{
@@ -168,6 +171,32 @@ img{
         font-size: 16px;
     }
 }
+
+
+@media screen and (width :800px) {
+
+    .container{
+        display: flex;
+        justify-items: center;
+        text-align: center;
+        margin-top: 400px;
+    }
+
+    .card{
+        padding-top: 200px;
+        justify-items: center;
+        
+    }
+    
+    img{
+        position: relative;
+        display: flex;
+
+    }
+    
+}
+
+
 
 
 

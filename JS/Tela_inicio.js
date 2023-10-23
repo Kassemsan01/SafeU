@@ -14,6 +14,16 @@ function sair() {
     window.location.href = "../HTML/Interface.html"
 }
 
+const menuu = document.querySelector("#menu-h");
+
+function clickMenu(){
+    if (menuu.style.display == 'block'){
+        menuu.style.display = 'none';
+    } else{
+        menuu.style.display = 'block';
+    }
+}
+
 
 
 
