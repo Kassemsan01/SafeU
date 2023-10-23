@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
     <link rel="stylesheet" href="../CSS/Sobre.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="../JS/Sobre.js" defer></script>
 </head>
+
 <body>
+    <h1 id="logado"></h1>
 
     <div class="logo">
-        <img href="#"><img src="../IMAGENS/LogoSafeU.png" alt="logo do site" height="300" width="300"></img>
+        <img href="#"><img src="../IMAGENS/LogoSafeU.png" alt="logo do site" width="300" height="300" />
     </div>
 
 
-    <h1 id = "logado"></h1>
+    <div class="hamburguer">
+        <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    </div>
+
 
     <nav id="menu-h">
         <ul>
@@ -29,7 +37,7 @@
                 </a>
             </li>
 
-            
+
             <li>
                 <a href="Medicamento.html">
                     Medicamento
@@ -49,12 +57,12 @@
                 </a>
             </li>
             <!-- <li><a href="#">Configurações</a></li> -->
-            
+
             <div class="justify-center">
-            <button onclick="sair()">Sair</button>
+                <button onclick="sair()">Sair</button>
             </div>
         </ul>
- 
+
     </nav>
 
 
@@ -65,25 +73,31 @@
 
 
 
-     <img class="tela-fundo" src="../IMAGENS/idoso_celular.webp">
-     <img class="tela-lateral" src="../IMAGENS/MicrosoftTeams-image.png">
+    <img class="tela-fundo" src="../IMAGENS/idoso_celular.webp">
+    <img class="tela-lateral" src="../IMAGENS/MicrosoftTeams-image.png">
     <div class="conteiner">
         <h1>Quem somos</h1>
         <p>
-            Somos um projeto de TCC, durante o estudo para ver qual seria nosso projeto vimos por base de experiência de alguns integrantes que observaram,
-            que tinham familiares que tomavam remédios fora do horário, e estudando, pesquisando vimos que isso é um problema que precisa ser resolvido. 
+            Somos um projeto de TCC, durante o estudo para ver qual seria nosso projeto vimos por base de experiência de
+            alguns integrantes que observaram,
+            que tinham familiares que tomavam remédios fora do horário, e estudando, pesquisando vimos que isso é um
+            problema que precisa ser resolvido.
 
         </p>
         <br>
 
         <p>
-            por isso decidimos criar este projeto para ajudar estas pessoas que tem problemas com o horário de tomar remédio, ao invés de tomar o remédio quando acorda,
-            para evitar problemas é melhor seguir um cronograma préescrito pelo medico para auxiliar isso, criamos o nosso site que serve tanto para cadastrar o seu remedio,
-            ter um alarme quanto um cuidador ter um login para ter informaçoes sobre o usuario e anotaçoes que ele pode fazer.
+            por isso decidimos criar este projeto para ajudar estas pessoas que tem problemas com o horário de tomar
+            remédio, ao invés de tomar o remédio quando acorda,
+            para evitar problemas é melhor seguir um cronograma préescrito pelo medico para auxiliar isso, criamos o
+            nosso site que serve tanto para cadastrar o seu remedio,
+            ter um alarme quanto um cuidador ter um login para ter informaçoes sobre o usuario e anotaçoes que ele pode
+            fazer.
         </p>
         <br>
 
     </div>
-    
+
 </body>
+
 </html>

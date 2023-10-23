@@ -16,7 +16,6 @@ function sair() {
 }
 
 
-
 function clickMenu(){
     if (menuu.style.display == 'block'){
         menuu.style.display = 'none';
@@ -24,11 +23,3 @@ function clickMenu(){
         menuu.style.display = 'block';
     }
 }
-
-
-
-
-
-    
-
-

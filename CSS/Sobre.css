@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.hamburguer{
+    display: none;
+}
+
 .tela-fundo{
     width: -50%;
     height: 500px;
@@ -35,7 +39,7 @@
     text-align:left;
     margin-left: -10%;
     margin-right: 30%;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .conteiner{
@@ -178,5 +182,92 @@ button {
 button:hover {
 
     background-color: #0056b3;
+
+}
+
+
+
+@media  (max-width:600px) {
+    
+    #logado{
+        font-size: 20px;
+    }
+
+    .hamburguer{
+        display:block;
+    }
+
+    .material-symbols-outlined{
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        background-color: #000000;
+    }
+    
+    .material-symbols-outlined:hover{
+        background-color: #0056b3;
+        color: #fff;
+    }
+
+    #menu-h{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .tela-fundo{
+        width: 500px;
+        height: 200px;
+        margin: 0;
+        position: relative;
+        padding: 2px;
+        right: 20%;
+    }
+
+    .tela-lateral{
+        display: none;
+    }
+
+    .conteiner{
+        max-width: 400px;
+        justify-items: center;
+        text-align: center;
+        padding:0;
+        margin: 10px;
+    }
+
+    .conteiner p{
+        max-width: 200px;
+        padding: 2px;
+        margin: 0;
+        text-align: center;
+        font-size: 16px;
+        right: -20%;
+
+
+
+    }
+
+    .justify button{
+        background-color: red;
+        border-color: #ff000080;
+        color: white;
+        padding: 7px;
+        font-weight: bold;
+        font-size: 12pt;
+        border-radius: 50px;
+        cursor: pointer;
+        outline: none;
+        transition: all 0.4s ease-out;
+        position: fixed;
+        margin: 200px;
+        margin-top: 600px;
+        right: -40px;
+        
+    }
+
 
 }
