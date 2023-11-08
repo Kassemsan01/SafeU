@@ -147,7 +147,7 @@ img{
     display: none;
 }
 
-@media screen and (width <=600px) {
+@media screen and (width <=800px) {
     .container{
         display: flex;
         background-image: none;
