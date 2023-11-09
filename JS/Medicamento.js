@@ -7,8 +7,6 @@ let userLogado = JSON.parse(localStorage.getItem("userLogado"));
 
 let logado = document.querySelector("#logado");
 
-const menuu = document.querySelector("#menu-h");
-
 logado.innerHTML = "Olá " + userLogado.nome
 
 if (localStorage.getItem("token") == null) {
@@ -23,13 +21,7 @@ function sair() {
 }
 
 
-function clickMenu(){
-    if (menuu.style.display == 'block'){
-        menuu.style.display = 'none';
-    } else{
-        menuu.style.display = 'block';
-    }
-}
+
 
 function cadastrarRemedio() {
 
@@ -258,3 +250,13 @@ function voltar() {
     window.location.href = "../HTML/Tela_Inicial.html"
 }
 
+
+const menuu = document.querySelector("#menu-h");
+
+function clickMenu(){
+    if (menuu.style.display == 'block'){
+        menuu.style.display = 'none';
+    } else{
+        menuu.style.display = 'block';
+    }
+}

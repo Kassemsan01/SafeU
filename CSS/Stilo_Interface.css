@@ -147,12 +147,13 @@ img{
     display: none;
 }
 
-@media screen and (width <=800px) {
+@media screen and (max-width :600px) {
     .container{
         display: flex;
         background-image: none;
-        top: 350px;
         margin: 0;
+        padding: auto;
+        margin: auto;
     }
 
     img{
@@ -172,29 +173,6 @@ img{
     }
 }
 
-
-@media screen and (width :800px) {
-
-    .container{
-        display: flex;
-        justify-items: center;
-        text-align: center;
-        margin-top: 400px;
-    }
-
-    .card{
-        padding-top: 200px;
-        justify-items: center;
-        
-    }
-    
-    img{
-        position: relative;
-        display: flex;
-
-    }
-    
-}
 
 
 
