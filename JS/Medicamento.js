@@ -1,14 +1,25 @@
 
+const user = JSON.parse(localStorage.getItem("userLogado"));
+
+const log = document.querySelector("#logado");
+
 const remedioForm = document.getElementById('remedioForm');
 
 const remediosList = document.getElementById('remedios');
 
-let userLogado = JSON.parse(localStorage.getItem("userLogado"));
 
-let logado = document.querySelector("#logado");
-const menuu = document.querySelector("#menu-h");
+const menu = document.querySelector("#menu-h");
 
-logado.innerHTML = "Olá " + userLogado.nome
+function clickMenu(){
+    if (menu.style.display == 'block'){
+        menu.style.display = 'none';
+    } else{
+        menu.style.display = 'block';
+    }
+}
+
+
+log.innerHTML = "Olá " + user.nome
 
 if (localStorage.getItem("token") == null) {
     alert("Você precisa estar logado para acessar essa página")
@@ -249,14 +260,4 @@ atualizarListaRemedios();
 
 function voltar() {
     window.location.href = "../HTML/Tela_Inicial.html"
-}
-
-
-
-function clickMenu(){
-    if (menuu.style.display == 'block'){
-        menuu.style.display = 'none';
-    } else{
-        menuu.style.display = 'block';
-    }
 }
