@@ -6,6 +6,7 @@ const remediosList = document.getElementById('remedios');
 let userLogado = JSON.parse(localStorage.getItem("userLogado"));
 
 let logado = document.querySelector("#logado");
+const menuu = document.querySelector("#menu-h");
 
 logado.innerHTML = "Olá " + userLogado.nome
 
@@ -251,7 +252,6 @@ function voltar() {
 }
 
 
-const menuu = document.querySelector("#menu-h");
 
 function clickMenu(){
     if (menuu.style.display == 'block'){
