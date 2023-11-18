@@ -5,10 +5,10 @@
 }
 
 body{
-    background: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    
 }
 
 .container{
@@ -124,6 +124,7 @@ a:hover{
 img{
   height: 300px;
   width: 300px;
+  right: 80%;
   border-radius: 100%;
   display: flex;
   justify-content: flex-start;
@@ -152,6 +153,7 @@ img{
         display: flex;
         background-image: none;
         margin: 0;
+        width: 100%;
     }
 
     img{
@@ -160,6 +162,7 @@ img{
         z-index: 2;
         width: 200px;
         height: 200px;
+        right: 0%;
     }
 
     .card{
