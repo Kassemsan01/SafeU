@@ -258,7 +258,6 @@ h1{
         margin: 0;
         justify-items: center;
         right: 0;
-        margin-bottom: 20px;
         padding-bottom: 20px;
     }
 
@@ -268,6 +267,10 @@ h1{
         text-align: center;
         justify-items: center;
         background-color: #cbcbcb25;
+    }
+
+    .bordas h1{
+        margin-bottom: 0;
     }
 
     .justify button{

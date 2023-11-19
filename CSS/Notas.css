@@ -197,4 +197,7 @@ button {
     #menu-h{
         display: none;
     }
+    .justify button{
+        margin-top: 100px;
+    }
 }

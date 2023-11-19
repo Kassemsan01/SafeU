@@ -105,6 +105,7 @@ img{
   position: fixed;
   padding: 25px 60px;
   z-index: 1;
+  width: 400px;
 }
 
 
@@ -161,6 +162,14 @@ img{
 }
 
 
+@media (max-width :600px){
 
+    img{
+        display: none;
+    }
 
+    .card{
+        margin: 20px;
+    }
+}
 
