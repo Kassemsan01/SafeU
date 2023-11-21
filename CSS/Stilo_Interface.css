@@ -25,6 +25,7 @@ body{
     padding: 30px;
     border-radius: 4%;
     box-shadow: 3px 3px 1px 0px #00000060;
+    background-color: #E7E9EB;
 }
 
 h1{
@@ -70,6 +71,48 @@ h1{
 
 .label-float input:focus + label, 
 .label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #4038a0;
+}
+
+.label-float_senha input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #272262;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+    border-radius: 0;
+}
+
+.label-float_senha{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float_senha input:focus{
+    border-bottom: 2px solid #4038a0;
+}
+
+.label-float_senha label{
+    color: #272262;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all 0.3s ease-out;
+}
+
+.label-float_senha input:focus + label, 
+.label-float_senha input:valid + label{
     font-size: 13px;
     margin-top: 0;
     color: #4038a0;

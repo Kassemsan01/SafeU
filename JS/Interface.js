@@ -1,3 +1,7 @@
+const Labelinput = document.querySelector(".label-float input")
+
+const Labelinput_senha = document.querySelector(".label-float_senha input")
+
 let btn = document.querySelector('.fa-eye')
 
 btn.addEventListener('click', ()=>{
@@ -59,3 +63,15 @@ function entrar(){
   }
   
 }
+
+Labelinput.addEventListener("keydown", (e) =>{
+  if(e.key === "Enter"){
+    entrar();
+  }
+})
+
+Labelinput_senha.addEventListener("keydown", (e) =>{
+  if(e.key === "Enter"){
+    entrar();
+  }
+})
