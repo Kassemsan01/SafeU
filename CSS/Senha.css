@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background: linear-gradient(to right, #fff, #a6d1f2);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card{
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000060;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #272262;
+}
+
+.senha_img{
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-left: 90px
+
+}
+
+.senha_img img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+p{
+    padding: 5px;
+    font-size: 16px;
+
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #272262;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+    border-radius: 0;
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid #4038a0;
+}
+
+.label-float label{
+    color: #272262;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all 0.3s ease-out;
+}
+
+.label-float input:focus + label, 
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #4038a0;
+}
+
+.btn_Senha button{
+    background-color: #6cacf6;
+    border-color: #117efc;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s ease-out;
+    width: 80px;
+    height: 80px;
+}
+
+.btn_Senha button:hover{
+    background-color: #117efc;
+    color: #fff;
+}
+
+.btn_Senha{
+    justify-content: center;
+    display: flex;
+    padding: 15px;
+}
+
+footer{
+    padding: 10px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    padding-left: 250px;
+    padding-top: 15px;
+    top: -80px;
+}
+
+
+@media (max-width: 600px){
+    .card{
+        background-color: #f4f4f4;
+        padding: 5%;
+        border-radius: 5%;
+        box-shadow: 3px 3px 1px 0px #00000060;
+    }
+
+    h2{
+        text-align: center;
+        margin-bottom: 5px;
+        color: #272262;
+    }
+
+    .senha_img{
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        padding-left: 40px
+    
+    }
+
+    p{
+        padding: 5px;
+        font-size: 16px;
+        width: -90px;
+
+    
+    }
+
+    .btn_Senha button{
+        background-color: #6cacf6;
+        border-color: #117efc;
+        font-weight: bold;
+        font-size: 40px;
+        border-radius: 100%;
+        cursor: pointer;
+        outline: none;
+        transition: all 0.4s ease-out;
+        width: 60px;
+        height: 60px;
+    }
+
+    footer{
+        padding: 10px;
+        padding-top: 15px;
+        display: flex;
+        justify-content: center;
+    }
+}
