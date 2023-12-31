@@ -121,14 +121,13 @@ p{
 
 footer{
     padding: 10px;
-    padding-top: 15px;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 footer p{
     padding-left: 250px;
-    padding-top: 15px;
+    padding-bottom: -50px;
     top: -80px;
 }
 
@@ -178,14 +177,13 @@ footer p{
 
     footer{
         padding: 10px;
-        padding-top: 10px;
         display: flex;
-        justify-content: center;
+        align-items: center;
     }
-
+    
     footer p{
-        padding-left: 120px;
-        padding-top: 15px;
+        padding-left: 100px;
+        padding-bottom: -40px;
         top: -80px;
     }
 }

@@ -6,10 +6,10 @@
 }
 
 body{
-    background: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background: linear-gradient(to right, #fff, #a6d1f2);
 }
 
 .container{
@@ -25,6 +25,7 @@ body{
     border-radius: 4%;
     box-shadow: 3px 3px 1px 0px #00000060;
     width: 400px;
+    background-color: #E7E9EB;
 }
 
 h1{
