@@ -13,57 +13,56 @@
 
 #menu-h{
     background-color: rgb(37, 37, 39);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 300px;
 }
 
-#menu-h ul {
-    max-width:650px;
-    list-style: none;
-    padding: 0;
-}
-
-#menu-h ul li {
-    display: inline;
+footer{
+    color: #fff;
+    margin-left: 15%;
+    
 }
 
 #menu-h ul li a {
-    color: #FFF;
-    padding: 20px;
-    display: inline-block;
+    list-style: none;
+    margin-top: 20px;
+    padding: 10px 100px 10px 20px;
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
     text-decoration: none;
     border-radius: 10px;
+    color: #FFF;
+    cursor: pointer;
 }
+
+#menu-h img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 25%;
+}
+
 
 #menu-h ul li a:hover {
     background-color: rgb(24, 139, 233);
 }
 
-#menu-h ul li:last-child a {
-    float: right;
-    background-color: rgb(24, 139, 233);
-}
 
 .justify-center button{
     background-color: transparent;
-    border:none;
-    color: #fff;
-    padding: 20px;
-    font-size: 12pt;
+    padding: 0 100px 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
     border-radius: 10px;
-    cursor: pointer;
-    outline: none;
-    
+    color: #FFF;
 }
 
-.justify-center button:hover{
-    background-color: rgb(24, 139, 233);
-    color: #fff;
-}
-
-.justify-center{
-    justify-content: center;
-    display: inline;
-    display: inline-block;
-}
 
 .logo{
     position: fixed;
@@ -77,48 +76,19 @@
     top: 54px;
 }
 
-.justify button{
+.justify{
     background-color: red;
     border-color: #ff000080;
     color: white;
-    padding: 7px;
-    font-weight: bold;
-    font-size: 12pt;
-    border-radius: 50px;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.4s ease-out;
-    position: fixed;
-    margin: 33%;
-    right: 16%;
 }
 
-.justify button:hover{
+.justify:hover{
     background-color: #ff000080;
     color: #fff;
 }
 
-.justify{
-    justify-content: center;
-    display: flex;
-}
 
-/* .cartela{
-    position:relative;
-    padding: 10px;
-    z-index: 1;
-    justify-content:center;
-    max-width: 50%;
-    max-height: 0;
-    margin: 30px;
-    border-radius: 50%;
-    top: -400px;
-    min-width: 500px;
-} */
-
-
-
-button {
+.button-nota {
 
     background-color: #000000;
 
@@ -136,7 +106,7 @@ button {
 
  
 
-button:hover {
+.button-nota:hover {
 
     background-color: #0056b3;
 

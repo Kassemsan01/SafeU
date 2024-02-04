@@ -98,7 +98,7 @@ function cadastrar(){
         msgError.setAttribute("Style", "display: none")
 
         setTimeout(()=>{
-            window.location.href = "../HTML/Interface.html"
+            window.location.href = "../HTML/Tela_de_login.html"
         },3000)
 
     } 
@@ -135,5 +135,5 @@ btnConfirm.addEventListener('click', ()=>{
 })
 
 function voltar(){
-    window.location.href = "../HTML/Interface.html"
+    window.location.href = "../HTML/Tela_de_login.html"
 }

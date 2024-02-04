@@ -1,17 +1,19 @@
 
 const menuu = document.querySelector("#menu-h");
+let userLogado = JSON.parse(localStorage.getItem("userLogado"))
+let logado = document.querySelector("#logado")
 
 logado.innerHTML = "Olá " + userLogado.nome
 
 if (localStorage.getItem("token") == null) {
     alert("Você precisa estar logado para acessar essa página")
-    window.location.href = "../HTML/Interface.html"
+    window.location.href = "../HTML/Tela_de_login.html"
 }
 
 function sair() {
     localStorage.removeItem("token")
     localStorage.removeItem("userLogado")
-    window.location.href = "../HTML/Interface.html"
+    window.location.href = "../HTML/Tela_de_login.html"
 }
 
 
@@ -118,14 +120,11 @@ function cadastrar(){
     }
 }
 
-let userLogado = JSON.parse(localStorage.getItem("userLogado"))
-let logado = document.querySelector("#logado")
 
-logado.innerHTML = "Olá " + userLogado.nome
 
 if(localStorage.getItem("token") == null){
     alert("Você precisa estar logado para acessar essa página")
-    window.location.href = "../HTML/Interface.html"
+    window.location.href = "../HTML/Tela_de_login.html"
 }
 
 function voltar(){

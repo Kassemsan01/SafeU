@@ -12,13 +12,13 @@ logado_notas.innerHTML = "Olá " + userlog.nome
 
 if (localStorage.getItem("token") == null) {
     alert("Você precisa estar logado para acessar essa página")
-    window.location.href = "../HTML/Interface.html"
+    window.location.href = "../HTML/Tela_de_login.html"
 }
 
 function sair() {
     localStorage.removeItem("token")
     localStorage.removeItem("user")
-    window.location.href = "../HTML/Interface.html"
+    window.location.href = "../HTML/Tela_de_login.html"
 }
 
 
@@ -79,7 +79,7 @@ function atualizarListaNotas() {
 
                 <br>nota${index, 1}: ${notas.informacoes}<br>
 
-                <br><button onclick="removerNotas(${index})">Remover</button><br>
+                <br><button class= "button-nota" onclick="removerNotas(${index})">Remover</button><br>
                 
             `;
 

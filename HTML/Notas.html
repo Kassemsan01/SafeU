@@ -18,11 +18,11 @@
 
     <link rel="shortcut icon" href="../IMAGENS/LogoSafeU.ico" type="image/x-icon">
 
+    <script src="https://kit.fontawesome.com/ecfe026c43.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-
-    <h1 id="logado"></h1>
 
     <div class="hamburguer">
         <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -30,15 +30,23 @@
 
 
     <nav id="menu-h">
+
+        <img src="../IMAGENS/Imagem-padrão.png" alt="Imagem usuario"/>
+        <footer id="logado"></footer>
+
         <ul>
+
             <li>
-                <a href="../HTML/Tela_Inicial.html">
+                <a href="../HTML/Tela_Inicial.html" >
+                    <span class="fa fa-home"></span>
                     Home
                 </a>
             </li>
 
+
             <li>
                 <a href="../HTML/Sobre.html">
+                    <span class="fa fa-circle-info"></span>
                     Sobre
                 </a>
             </li>
@@ -46,6 +54,7 @@
 
             <li>
                 <a href="Medicamento.html">
+                    <i class="fa-solid fa-prescription-bottle-medical"></i>
                     Medicamento
                 </a>
             </li>
@@ -53,20 +62,38 @@
 
             <li>
                 <a href="../HTML/Notas.html">
+                    <i class="fa-solid fa-note-sticky"></i>
                     Notas
                 </a>
             </li>
-            <!-- <li><a href="#">Saúde</a></li> -->
+
+
             <li>
-                <a href="../HTML/Cuidador.html">
+                <a href="../HTML/Cadastro_cuidador.html">
+                    <i class="fa-solid fa-person"></i>
                     Cuidador
                 </a>
             </li>
-            <!-- <li><a href="#">Configurações</a></li> -->
 
-            <div class="justify-center">
-                <button onclick="sair()">Sair</button>
-            </div>
+
+            <!-- <li><a href="../HTML/Config.html">Configurações</a></li> -->
+
+            <li>
+                    <a onclick="sair()">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        Sair
+                    </a>
+            </li>
+
+            
+            <li>
+
+                <a class="justify">
+                    <i class="fa-solid fa-life-ring"></i>
+                    SOS
+                </a>
+
+            </li>
         </ul>
 
     </nav>
@@ -88,11 +115,6 @@
 
     <div class="voltar">
         <button onclick="voltar()">Voltar</button>
-    </div>
-
-
-    <div class="justify">
-        <button onclick="SOS()">SOS</button>
     </div>
 
 </body>
