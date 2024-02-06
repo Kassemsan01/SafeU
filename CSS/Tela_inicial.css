@@ -7,6 +7,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    background-color: #1C1C1C;
+}
+
 .hamburguer{
     display: none;
 }
@@ -87,6 +91,14 @@ footer{
     color: #fff;
 }
 
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
 
 .button-nota {
 
@@ -117,29 +129,72 @@ footer{
 #listaRemedios {
 
     text-align: center;
-    justify-content: flex-start;
     background-color: #c3c3c038;
     border: 1px solid #ccc;
     font-size: 20px;
-
+    padding: 50px;
+    justify-content: space-between;
+    height: 600px;
+    width: 400px;
+    overflow: auto;
+    
 }
 
 #listaRemedios h2{
     text-align: center;
     color: black;
     padding-bottom: 1px solid #333;
+    text-decoration:underline;
+}
+
+.removerremedio{
+
+    background-color: #000000;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+.removerremedio:hover{
+    background-color: #0056b3;
 }
 
 
 
 
 .bordas{
-    background-color: #8b8b8b25;
+    text-align: center;
+    background-color: #c3c3c038;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    padding: 50px;
+    justify-content: space-between;
+    height: 600px;
+    width: 400px;
+    overflow: auto;
+}
+
+.bordas h2{
+    text-align: center;
+    color: black;
+    padding-bottom: 1px solid #333;
+    text-decoration:underline;
+}
+
+.bordnota{
     padding: 20px;
     border-radius: 4%;
     box-shadow: 3px 3px 1px 0px #00000060;
-    width: 40%;
-    float: right;
+    background-color: #B0E0E6;
+    margin-top: 10%;
 }
 
 .notas{
@@ -152,45 +207,32 @@ footer{
     top: 0;
 }
 
+.infoNota{
+    padding: 20px;
+    list-style:circle;
+}
 
 
 .bord{
-
-    background-color: #cbcbcb25;
     padding: 20px;
     border-radius: 4%;
     box-shadow: 3px 3px 1px 0px #00000060;
-    width: 40%;
-    float:left;
-    margin-right: 10px;
-    top: 0;
-    left: 0;
-    right: 20px;
-
-
+    background-color: #DEB887;
+    margin-top: 10%;
+    margin-left: 30%;
 }
 
 
-.muda{
-    margin-bottom: 10px;
-    padding: 5px;
-    background-color: #efefea38;
-    border: 1px solid #ccc;
-    text-align: center;
-    right: 100px;
-    top: 0;
-    padding-bottom: 1px solid #333;
-}
 
 .material-symbols-outlined{
     display: none;
 }
 
-h1{
-    text-align: center;
-    margin-bottom: 20px;
-    color: #272262;
+.infoRemedio{
+    padding: 20px;
+    list-style:circle;
 }
+
 
 
 
@@ -239,7 +281,7 @@ h1{
         background-color: #cbcbcb25;
     }
 
-    .bordas h1{
+    .bordas h2{
         margin-bottom: 0;
     }
 
@@ -261,7 +303,7 @@ h1{
         
     }
 
-    .info{
+    main{
         align-items: center;
         padding: 20px;
         display: block;

@@ -158,18 +158,19 @@ function atualizarListaRemedios() {
         const remedioItem = document.createElement('ul');
 
         remedioItem.innerHTML = `
+                <ul class = "infoRemedio">
+                    <li><strong>${remedio.nome}</strong></li>
 
-                <br><strong>${remedio.nome}</strong><br>
+                    <li>Horário: ${remedio.horario}</li>
 
-                Horário: ${remedio.horario}<br>
+                    <li>Dias de Repetição: ${remedio.dias}</li>
 
-                Dias de Repetição: ${remedio.dias}<br>
+                    <li>Quantidade: ${remedio.quantidade}</li>
 
-                Quantidade: ${remedio.quantidade}<br>
+                    <li>Informações: ${remedio.informacoes}</li>
+                </ul>
 
-                Informações: ${remedio.informacoes}<br>
-
-                <br><button onclick="removerRemedio(${index})">Remover</button><br>
+                <br><button class="removerremedio" onclick="removerRemedio(${index})">Remover</button><br>
             `;
 
         remediosList.appendChild(remedioItem);

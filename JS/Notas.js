@@ -76,11 +76,11 @@ function atualizarListaNotas() {
         const notasItem = document.createElement('p');
 
         notasItem.innerHTML = `
+                <ul class = "infoNota">
+                <li>${notas.informacoes} </li>
 
-                <br>nota${index, 1}: ${notas.informacoes}<br>
-
-                <br><button class= "button-nota" onclick="removerNotas(${index})">Remover</button><br>
-                
+                    <br><button class= "button-nota" onclick="removerNotas(${index})">Remover</button><br>
+                </ul>
             `;
 
             NotasList.appendChild(notasItem);
