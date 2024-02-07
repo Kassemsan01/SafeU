@@ -98,7 +98,8 @@ footer{
     border-radius: 4%;
     box-shadow: 3px 3px 1px 0px #00000060;
     width: 400px;
-    background-color: #fff;
+    background-color: #DEB887;
+    border: 5px solid #F5DEB3;
 }
 
 .label-float input{

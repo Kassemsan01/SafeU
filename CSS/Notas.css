@@ -33,11 +33,7 @@ header {
 
     margin: 20px;
 
-    background-color: #fff;
-
     padding: 10px;
-
-    border: 1px solid #ccc;
 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 
@@ -48,8 +44,6 @@ header {
     margin-left: 30%;
 
     margin-right: 30%;
-
-    background-color: #FFDEAD;
 
 }
 
@@ -67,7 +61,11 @@ textarea {
 
     resize: none;
 
-    background-color: #F5DEB3;
+    background-color: #B0E0E6;
+
+    border: 5px solid #E0FFFF;
+
+    border-radius: 12px;
 
 }
 

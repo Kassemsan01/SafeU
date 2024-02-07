@@ -37,11 +37,10 @@ h1{
 
     padding: 20px;
 
-    border: 1px solid #ccc;
+    border: 5px solid #E0FFFF;
 
     padding: 30px;
 
-    box-shadow: 3px 3px 1px 0px #00000060;
 
     margin-left: 30%;
 
@@ -49,11 +48,13 @@ h1{
 
     margin-top: 5%;
 
-    background-color: #fff;
+    background-color: #B0E0E6;
 
     height: 50vh;
 
     width: 100vh;
+
+    border-radius: 12px;
 
 }
 
