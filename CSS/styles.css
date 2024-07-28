@@ -12,6 +12,10 @@ body {
     background-color: #f4f4f4;
 }
 
+.container{
+    margin: 0%;
+}
+
 
 .container img{
     width: 100%;
@@ -32,28 +36,34 @@ header {
 
 .container h1 {
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgba(121, 143, 255, 0.83); /* ou a cor que preferir */
+    color: rgba(255, 80, 80, 0.922); /* ou a cor que preferir */
     background-color: rgba(255, 255, 255, 0); /* fundo semitransparente */
     padding: 5px;
     border-radius: 5px;
     text-align: center;
     font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .container p {
     position: absolute;
-    top: 80%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(255, 121, 121); /* ou a cor que preferir */
+    color: rgb(103, 148, 247); /* ou a cor que preferir */
     background-color: rgba(255, 255, 255, 0); /* fundo semitransparente */
     padding: 5px;
     border-radius: 5px;
     text-align: center;
     font-size: 60px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 header li{
@@ -100,15 +110,22 @@ section {
     font-size: 30px;
 }
 
-.features{
+.Sobre{
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
     background-color: #7c9afc;
+}
+
+.features{
+    background-color: #f8a1a1;
     text-align: center;
     padding: 30px;
     font-size: 20px;
 }
 
 .why-choose{
-    background-color: #f8a1a1;
+    background-color: #7c9afc;
     text-align: center;
     padding: 30px;
     font-size: 20px;

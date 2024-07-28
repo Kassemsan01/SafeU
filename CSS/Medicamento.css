@@ -23,6 +23,7 @@ body{
     bottom: 0;
     padding: 12px;
     width: 300px;
+    z-index: 1000px;
 }
 
 footer{
@@ -42,6 +43,7 @@ footer{
     border-radius: 10px;
     color: #FFF;
     cursor: pointer;
+    z-index: 1000px;
 }
 
 #menu-h img{

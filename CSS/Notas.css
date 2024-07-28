@@ -166,7 +166,7 @@ footer{
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 576px){
     #logado{
         font-size: 20px;
     }
@@ -193,5 +193,9 @@ footer{
     }
     .justify button{
         margin-top: 100px;
+    }
+
+    #note-container{
+        margin: 0%;
     }
 }

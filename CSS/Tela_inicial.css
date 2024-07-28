@@ -23,6 +23,7 @@ body{
     bottom: 0;
     padding: 12px;
     width: 300px;
+    z-index: 1000px;
 }
 
 footer{
@@ -213,10 +214,8 @@ main{
 
 
 .bord{
-    padding: 20px;
     border-radius: 4%;
     box-shadow: 3px 3px 1px 0px #00000060;
-
     margin-top: 10%;
     margin-left: 30%;
 }
@@ -269,15 +268,21 @@ main{
         margin: 0;
         justify-items: center;
         right: 0;
-        padding-bottom: 20px;
     }
 
     .bordas{
         display: block;
+        padding: 10px;
         width: 100%;
         text-align: center;
+        margin: 0;
         justify-items: center;
-        background-color: #cbcbcb25;
+        right: 0;
+        padding-bottom: 20px;
+    }
+
+    #listaRemedios{
+        width: 100%;
     }
 
     .bordas h2{
