@@ -40,6 +40,10 @@ let telefone = document.querySelector("#telefone")
 let LabelTelefone = document.querySelector("#LabelTelefone")
 let validTelefone = false
 
+let email = document.querySelector("#email")
+let Labelemail = document.querySelector("#Labelemail")
+let validemail = false
+
 let msgError = document.querySelector("#msgError")
 let msgSuccess = document.querySelector("#msgSuccess")
 
@@ -86,9 +90,24 @@ telefone.addEventListener("keyup", ()=>{
     }
 })
 
+email.addEventListener("keyup", ()=>{
+    if(email.value.length >= 65){
+        LabelEmail.setAttribute("style", "color: red")
+        LabelEmail.innerHTML = '<strong> email *Maximo de caracterer é de 65</strong>'
+        email.setAttribute("style", "border-color: red")
+        validemail = false
+    } 
+    else{
+        LabelEmail.setAttribute("style", "color: green")
+        LabelEmail.innerHTML = "email"
+        email.setAttribute("style", "border-color: green")
+        validEmail = true
+    }
+})
+
 
 function cadastrar(){
-    if(validNome && validTelefone && validCoren){
+    if(validNome && validTelefone && validCoren && validEmail){
 
         let listaCuid = JSON.parse(localStorage.getItem("listaCuid") || "[]")
 
@@ -96,7 +115,8 @@ function cadastrar(){
             {
                 nomeCad: nome.value,
                 corCad: coren.value,
-                telCad: telefone.value
+                telCad: telefone.value,
+                emaCad: email.value
             }
         )
 
@@ -117,6 +137,10 @@ function cadastrar(){
         msgError.innerHTML = "<strong>Preencha todos os campos corretamente antes de cadastrar</strong>"
         msgSuccess.innerHTML = ""
         msgSuccess.setAttribute("Style", "display: none")
+
+        setTimeout(()=>{
+            window.location.href = "../HTML/Cadastro_cuidador.html"
+        },1500)
     }
 }
 
